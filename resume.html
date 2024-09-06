@@ -5,12 +5,29 @@
     <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      a {
+        color: #444;
+      }
+      body {
+        hyphens: none;
+      }
+      #main {
+        font-size: 7.5pt;
+      }
+      .location {
+        font-size: 7pt;
+      }
+      #title h1, #title span {
+        //text-transform: none;
+      }
+    </style>
   </head>
   <body lang="en">
     <section id="main">
       <header id="title">
-        <h1>John Doe</h1>
-        <span class="subtitle">Plaintiff, defendant &amp; witness</span>
+        <h1>Renxiang Cai (Ren)</h1>
+        <span class="subtitle">A curious and versatile developer. Ruby enthusiast since 2015.</span>
       </header>
       <section class="main-block">
         <h2>
@@ -18,61 +35,64 @@
         </h2>
         <section class="blocks">
           <div class="date">
-            <span>2015</span><span>present</span>
+            <span>2022.5</span><span>present</span>
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>Some Position</h3>
-              <span class="place">Some Workplace</span>
-              <span class="location">(remote)</span>
+              <h3>Senior Full-stack Developer (Rails / Vue / TypeScript)</h3>
+              <span class="place">Fresh Prep Inc.</span>
+              <span class="location">Vancouver, BC (remote)</span>
             </header>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor</li>
+                <li>Continuously deliver clean and maintainable codes with comprehensive test cases in RSpec.</li>
+                <li>Initiated and led development of a Single-Page Application using Vue 3 and TypeScript. Tailored Rails framework on source code level to suit our needs and created facilities for improved developer experience and code quality. (See projects below)</li>
+                <li>Identify areas of improvement and push for refactoring. Incrementally migrated from old table structure and architecture to more efficient ones.</li>
+                <li>Mentor other developers in system design and practical coding, provide feedbacks in code review.</li>
               </ul>
               </div>
           </div>
         </section>
         <section class="blocks">
           <div class="date">
-            <span>2014</span><span>2015</span>
+            <span>2018.7</span><span>2018.9</span>
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>Another Position</h3>
-              <span class="place">Some Workplace</span>
-              <span class="location">Some City, Some Country</span>
+              <h3>Ruby on Rails Developer</h3>
+              <span class="place">Kulian Technology (BitRabbit Exchange)</span>
+              <span class="location">Hangzhou, China</span>
             </header>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li>Besides regular web development, prototyped a cryptocurrency order matching engine in Rust to replace the slow Ruby implementation.</li>
               </ul>
             </div>
           </div>
         </section>
         <section class="blocks">
           <div class="date">
-            <span>2013</span><span>2014</span>
+            <span>2015.8</span><span>2018.6</span>
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>Yet Another Job Position</h3>
-              <span class="place">Some Workplace</span>
-              <span class="location">Some City, Some Country</span>
+              <h3>Full-stack developer (Ruby on Rails)</h3>
+              <span class="place">Youyike Technology (Shopperplus Inc.)</span>
+              <span class="location">Guangzhou, China</span>
             </header>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li>Collaborated with UI designers and product managers to ship functionalities using Rails and JavaScript.</li>
+                <li>Built and tuned a product search system based on ElasticSearch.</li>
+                <li>Designed and implemented a Single-Sign-On system to unify the sessions used by the company's many subsites.</li>
+                <li>Integrated Amazon, eBay and Costco for selling on those platforms, Moneris for collecting payments.</li>
+                <!--<li>Refactoring and prototyping according to emerged needs.</li>-->
               </ul>
               </div>
           </div>
@@ -84,56 +104,61 @@
         </h2>
         <section class="blocks">
           <div class="date">
-            <span>2015</span><span>2016</span>
+
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>Some Project 1</h3>
-              <span class="place">Some workplace</span>
+              <h3>Rails plugin: camille (Type-safe data exchange between front-end and Rails)</h3>
+              <span class="place">Fresh Prep Inc.</span>
             </header>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
+                <li>API endpoints in Rails are traditionally untyped, so there could be discrepancies between what Rails returns and what the TypeScript front-end expects.</li>
+                <li>I made this gem to define type schema for Rails API endpoints, and then generate RPC functions in TypeScript to be called at front-end. Meanwhile, every response from Rails will be type-checked, so type discrepancies can be eliminated.</li>
+                <li>Comparing with other API typing framework, this gem is designed to maximize developer experience and squeeze every bit out of Ruby syntax and expressiveness.</li>
+                <li><a href="https://github.com/onyxblade/camille" target="_blank">https://github.com/onyxblade/camille</a></li>
               </ul>
             </div>
           </div>
         </section>
         <section class="blocks">
           <div class="date">
-            <span>2014</span><span>2015</span>
+
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>Some Project 2</h3>
-              <span class="place">Some workplace</span>
+              <h3>Rails plugin: associationist (A gem to define virtual associations)</h3>
+              <span class="place">Youyike Technology (Shopperplus Inc.)</span>
             </header>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor</li>
+                <li>By default, Rails associations are rigidly coupled with the underlying table structure. We had some complex queries that could not fit in a table or view, but we still wanted to abstract them as associations to benefit from Rails' syntax and preloading facility.</li>
+                <li>I created this gem to define virtual associations that do not need tables backing them. This greatly enhanced flexibility and allowed use-cases like Shopify's dynamic automated collection.</li>
+                <li><a href="https://github.com/onyxblade/associationist" target="_blank">https://github.com/onyxblade/associationist</a></li>
               </ul>
             </div>
           </div>
         </section>
         <section class="blocks">
           <div class="date">
-            <span>2014</span>
+
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>Some Project 3</h3>
-              <span class="place">Some workplace</span>
+              <h3>Contributed to Rails on a query issue</h3>
+              <span class="place">Youyike Technology (Shopperplus Inc.)</span>
             </header>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
+                <li>We encountered a bug of Rails that preloading multi-level through association would return wrong results.</li>
+                <li>I investigated the cause, created a PR for the fix and test cases.</li>
+                <li><a href="https://contributors.rubyonrails.org/contributors/cicholgricenchos/commits" target="_blank">https://contributors.rubyonrails.org/contributors/cicholgricenchos/commits</a></li>
               </ul>
             </div>
           </div>
@@ -145,67 +170,33 @@
         </h2>
         <section class="blocks">
           <div class="date">
-            <span>2009</span><span>2014</span>
+            <span>2019.1</span><span>2022.4</span>
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>Ph.D. in Forty-Two Discovery</h3>
-              <span class="place">Inexistent University</span>
-              <span class="location">Some City, Some Country</span>
+              <h3>B.A. in Philosophy</h3>
+              <span class="place">Dalhousie University</span>
+              <span class="location">Halifax, NS</span>
             </header>
-            <div>Relationship of the number with the answer to life, the universe and everything</div>
-          </div>
+            <!--<div>Received full mark in this fourth-year course of theorem proving in Agda language:
+<a href="https://www.mathstat.dal.ca/~selinger/agda-lectures/" target="_blank">https://www.mathstat.dal.ca/~selinger/agda-lectures/</a></div>
+          </div>-->
         </section>
         <section class="blocks">
           <div class="date">
-            <span>2005</span><span>2009</span>
+            <span>2013.9</span><span>2015.6</span>
           </div>
           <div class="decorator">
           </div>
           <div class="details">
             <header>
-              <h3>LL.B. in H&aelig;matophagic Economics</h3>
-              <span class="place">Inexistent University</span>
-              <span class="location">Some City, Some Country</span>
+              <h3>B.S. in Computer Science</h3>
+              <span class="place">University of Science and Technology, Liaoning</span>
+              <span class="location">Anshan, China</span>
             </header>
-            <div>President's Scholarship</div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-            <span>2005</span><span>2009</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>B.S. in Existential Science (Double Major)</h3>
-              <span class="place">Inexistent University</span>
-              <span class="location">Some City, Some Country</span>
-            </header>
-            <div>President's Scholarship</div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Massive Online Fee&ndash;Required Course (selective list)</h3>
-            </header>
-            <div class="concise">
-              <ul>
-                <li>Introduction to something else</li>
-                <li>Introduction to some more useless things</li>
-                <li>Philosophy in practice</li>
-                <li>Recursive research and its impact on recursive research</li>
-                <li>Artificial politics</li>
-              </ul>
-            </div>
+            <div>Completed half the program and left for work.</div>
           </div>
         </section>
       </section>
@@ -216,10 +207,10 @@
           Contact Info
         </h1>
         <ul>
-          <li><i class="fa fa-globe"></i> johndoe.gtld</li>
-          <li><i class="fa fa-linkedin"></i> linkedin.com/in/john</li>
-          <li><i class="fa fa-envelope"></i> me@johndoe.gtld</li>
-          <li><i class="fa fa-phone"></i> 800.000.0000</li>
+          <li><i class="fa fa-github"></i> <a href="https://github.com/onyxblade/" target="_blank">github.com/onyxblade</a> </li>
+          <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/r-cai/" target="_blank">linkedin.com/in/r-cai</a> </li>
+          <li><i class="fa fa-envelope"></i> work@merely.ca </li>
+          <li><i class="fa fa-phone"></i> (902)-580-6866 </li>
         </ul>
       </div>
       <div class="side-block" id="skills">
@@ -227,12 +218,26 @@
           Skills
         </h1>
         <ul>
-          <li>Omnipresence</li>
-          <li>Anonymity</li>
+          <li>Ruby on Rails</li>
+          <li>RSpec (TDD / BDD)</li>
+          <li>C</li>
         </ul>
         <ul>
-          <li>Ordinarity</li>
-          <li>No name rights</li>
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Vue</li>
+          <li>React</li>
+        </ul>
+        <ul>
+          <li>Git</li>
+          <li>SQL</li>
+          <li>Docker</li>
+          <li>API Design</li>
+          <li>Database Design</li>
+          <li>Agile Development</li>
+          <li>Object-Oriented Programming</li>
+          <li>Functional Programming</li>
         </ul>
       </div>
       <div class="side-block" id="disclaimer">
